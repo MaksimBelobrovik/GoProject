@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<table>
+    <thead><th>Id</th><th>Company</th><th>Number of models</th></thead>
+    {{range . }}
+        <tr>
+            <td>{{.Id}}</td>
+            <td>{{.Company}}</td>
+            <td>{{.Numberofmodels}}</td>
+        </tr>
+    {{end}}
+</table>
+</body>
+</html>
